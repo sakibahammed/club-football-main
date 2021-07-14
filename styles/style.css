@@ -89,9 +89,35 @@ nav a {
 .button-thrd {
     width: 140px;
     height: 50px;
-    font-size: 50px;
-    color: #2D25A0;
-    ;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.button-fourth {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+    position: static;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.button-fourth:hover {
+    background-color: orangered;
+    border-radius: 30px;
+    transform: scale(1.1em);
+    transition: background-color, border-radius 1.5s ease-in 0.2s;
 }
 
 .button:hover {
@@ -116,7 +142,7 @@ nav a {
     width: 485px;
     height: 230px;
     margin-left: 156px;
-    margin-top: 207px;
+    margin-top: 213px;
     margin-bottom: 234px;
     font-family: Poppins;
     font-style: normal;
@@ -168,7 +194,7 @@ main {
 }
 
 .player-info img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 2s ease-in 0.1s;
 }
 
@@ -227,4 +253,66 @@ article img {
     width: 567px;
     height: 427px;
     margin-top: 224px;
+}
+
+
+/* .covid-sec */
+
+.covid-sec {
+    margin-top: 150px;
+}
+
+.header-covid {
+    font-size: 26px;
+    color: darkslategray;
+}
+
+.covid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-top: 100px;
+}
+
+.covid-prb {
+    height: 524px;
+    width: 300px;
+    border: 5px solid rgb(124, 73, 73);
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(46, 43, 43, 0.15);
+    overflow: hidden;
+}
+
+.covid-prb h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #18191F;
+}
+
+.covid-prb p {
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+.covid-prb img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+
+/*------ course -----*/
+
+.header-course {
+    font-size: 26px;
+    color: rgb(53, 42, 37);
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
 }
